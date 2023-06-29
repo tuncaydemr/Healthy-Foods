@@ -1,0 +1,337 @@
+@media only screen and (min-width: 36rem) and (max-width: 47.9375rem) {
+
+  /* S */
+  .home,
+  .contact,
+  .foods,
+  .dropdown-toggle {
+    padding: .9rem 1.2rem;
+    font-size: .6rem;
+  }
+
+  .logo-area p {
+    font-size: 1.1rem;
+  }
+
+  .side-menu-button img {
+    width: 1.125rem;
+    min-width: 1.125rem;
+    max-width: 1.125rem;
+    height: 1.125rem;
+    min-height: 1.125rem;
+    max-height: 1.125rem;
+  }
+
+  .side-menu {
+    width: 10rem;
+    padding: 1.875rem 0 0 0;
+  }
+
+  .side-menu ul li a {
+    font-size: .6rem;
+  }
+
+  .side-menu li {
+    padding: 1.5rem .5rem;
+  }
+
+  .dropdown-menu {
+    width: 6.2rem;
+    margin: .9rem 0 0 -1.2rem;
+    font-size: .6rem;
+  }
+
+  .banner-img {
+    margin: 2rem 0;
+  }
+
+  .dropdown-menu li a {
+    padding: .9rem 0;
+  }
+
+  .food-menu h3 {
+    font-size: .9rem;
+  }
+
+  #first-h3 {
+    text-align: left;
+    padding-left: 8rem;
+  }
+
+  #second-h3 {
+    text-align: right;
+    padding-right: 8rem;
+  }
+
+  .food-menu {
+    width: calc(100% - 2rem);
+    min-width: calc(100% - 2rem);
+    max-width: calc(100% - 2rem);
+    border-radius: 1rem;
+    padding: 2rem 0;
+    margin: .5rem 0;
+  }
+
+  .food-menu h1 {
+    font-size: 2.1rem;
+    text-align: center;
+    margin: 1.4rem 0;
+  }
+
+  .food-menu-area {
+    width: 90%;
+    border-radius: 1rem;
+    padding: 1.5rem .4rem;
+  }
+
+  .food-menu-area nav ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .food-menu-area nav ul li {
+    padding: 1rem;
+  }
+
+  .healthy-food-menu img {
+    display: block;
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .food-menu-items img {
+    display: block;
+    width: 8.75rem;
+    height: 8.75rem;
+  }
+
+  .food-name,
+  .food-price {
+    font-size: .625rem;
+    margin: 3rem 0 0 0;
+  }
+
+  .menus {
+    width: calc(100% - .3125rem);
+    min-width: calc(100% - .3125rem);
+    max-width: calc(100% - .3125rem);
+    margin: 2rem auto;
+    padding: 3rem 0;
+    border-radius: 1rem;
+  }
+
+  .menus nav ul a {
+    margin: 0 .5rem;
+  }
+
+  .menus-area {
+    border-radius: 0 !important;
+  }
+
+  .menus-menu-name {
+    font-size: .6rem;
+    padding: .4rem 0;
+  }
+
+  .about-us {
+    width: 100%;
+    height: auto;
+    background: var(--bg-color);
+  }
+
+  .about-us h1 {
+    text-align: center;
+    margin: 3rem 0 1.5rem 0;
+    font-size: .75rem;
+  }
+
+  .about-us p {
+    margin: 2rem 0;
+    padding: 1rem 2rem;
+    font-size: .625rem;
+  }
+
+  #about-us {
+    flex-direction: column-reverse;
+  }
+
+  #about-us figure {
+    display: flex;
+    justify-content: center;
+  }
+
+  #about-us figure img {
+    width: 100%;
+    height: auto;
+  }
+
+  #contact {
+    margin: 2rem 0 0 0;
+  }
+
+  #contact h1 {
+    margin: 2.5rem 0 1.5rem 0;
+    font-size: .75rem;
+  }
+
+  .quick-links li {
+    margin: 1rem 0;
+    font-size: .625rem;
+  }
+
+  .contact-us h3 {
+    font-size: .625rem;
+  }
+
+  .contact-us li {
+    margin: .3rem 0;
+  }
+
+  .contact-us img {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+
+  .contact-us li address,
+  .contact-us li p {
+    margin: .6rem 0;
+    font-size: .625rem;
+  }
+
+  .follow-us img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0 .4rem 0 0;
+  }
+
+  .payment-options {
+    margin: 1.4rem 0;
+    font-size: .625rem;
+  }
+
+  .payment-options h4 {
+    margin: 0 0 .6rem 0;
+  }
+
+  .payment-options img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0 .6rem 0 0;
+  }
+
+  .copyright p {
+    font-size: .5rem;
+  }
+
+  /* Dairy, Grains, Proteins, Vegetables, Fruits */
+
+  .dairy-products-border-area,
+  .grains-products-border-area,
+  .proteins-products-border-area,
+  .vegetables-products-border-area,
+  .fruits-products-border-area {
+    width: calc(100% - 5rem);
+    min-width: calc(100% - 5rem);
+    max-width: calc(100% - 5rem);
+  }
+
+  .dairy-products-area,
+  .grains-products-area,
+  .proteins-products-area,
+  .vegetables-products-area,
+  .fruits-products-area {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 3rem;
+  }
+
+  .dairy-products h1,
+  .grains-products h1,
+  .proteins-products h1,
+  .vegetables-products h1,
+  .fruits-products h1 {
+    font-size: .875rem;
+    margin: 1rem;
+  }
+
+  .dairy-products p,
+  .grains-products p,
+  .proteins-products p,
+  .vegetables-products p,
+  .fruits-products p {
+    font-size: .625rem;
+    margin: 1rem;
+  }
+
+  .vitamin-mineral-details-border {
+    margin: 2rem 0 4rem 0;
+  }
+
+  .vitamin-mineral-list-area {
+    width: calc(100% - 5rem);
+    min-width: calc(100% - 5rem);
+    max-width: calc(100% - 5rem);
+    grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+    padding: 2rem 1.5rem;
+    gap: 1rem
+  }
+
+  #vitamin-mineral-list-title {
+    width: calc(100% - 5rem);
+    min-width: calc(100% - 5rem);
+    max-width: calc(100% - 5rem);
+    padding: 1.5rem 1.5rem .8rem 1.5rem;
+    font-size: 1.25rem;
+  }
+
+  .vitamin-mineral-list:last-child {
+    grid-column: 1 / 4;
+  }
+
+  .vitamin-mineral-list h1,
+  .vitamin-mineral-list h3,
+  .vitamin-mineral-list p {
+    margin: 1rem;
+  }
+
+  .vitamin-mineral-list h1 {
+    font-size: .75rem;
+  }
+
+  .vitamin-mineral-list h3 {
+    font-size: .625rem;
+  }
+
+  .vitamin-mineral-list p {
+    font-size: .625rem;
+  }
+
+  .banner-img,
+  .food-menu,
+  .food-menu-area,
+  .menus,
+  .about-us,
+  #about-us figure img,
+  #contact,
+  #dairy-products-section,
+  #grains-products-section,
+  #proteins-products-section,
+  #vegetables-products-section,
+  #fruits-products-section,
+  .dairy-products-area,
+  .grains-products-area,
+  .proteins-products-area,
+  .vegetables-products-area,
+  .fruits-products-area,
+  .dairy-products,
+  .grains-products,
+  .proteins-products,
+  .vegetables-products,
+  .fruits-products,
+  .vitamin-mineral-details-border,
+  .vitamin-mineral-list {
+    animation: none !important;
+    opacity: 1 !important;
+  }
+}

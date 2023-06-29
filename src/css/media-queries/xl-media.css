@@ -1,0 +1,347 @@
+@media only screen and (min-width: 75rem) {
+
+  /* XL */
+  .home,
+  .contact,
+  .foods,
+  .dropdown-toggle {
+    padding: 1.5rem 3rem;
+    font-size: .9rem;
+  }
+
+  .logo-area p {
+    font-size: 2rem;
+  }
+
+  .side-menu-button img {
+    width: 3rem;
+    min-width: 3rem;
+    max-width: 3rem;
+    height: 3rem;
+    min-height: 3rem;
+    max-height: 3rem;
+  }
+
+  .side-menu {
+    width: 18rem;
+    padding: 9.375rem 0 0 0;
+  }
+
+  .side-menu ul li a {
+    font-size: .9rem;
+  }
+
+  .side-menu li {
+    padding: 3rem 2rem;
+  }
+
+  .dropdown-menu {
+    width: 11.7rem;
+    margin: 1.5rem 0 0 -3rem;
+    font-size: .9rem;
+  }
+
+  .banner-img {
+    margin: 5rem 0 7rem 0;
+  }
+
+  .dropdown-menu li a {
+    padding: 1.6rem 0;
+  }
+
+  .food-menu h3 {
+    font-size: 1.5rem;
+  }
+
+  #first-h3 {
+    text-align: left;
+    padding-left: 18rem;
+  }
+
+  #second-h3 {
+    text-align: right;
+    padding-right: 18rem;
+  }
+
+  .food-menu {
+    position: relative;
+    width: calc(100% - 30rem);
+    min-width: calc(100% - 30rem);
+    max-width: calc(100% - 30rem);
+    border-radius: 1rem;
+    padding: 7rem 0;
+    margin: 3rem 0;
+  }
+
+  .food-menu h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 2rem 0;
+  }
+
+  .food-menu-area {
+    position: relative;
+    width: 80%;
+    border-radius: 1rem;
+    padding: 3rem 1rem;
+  }
+
+  .food-menu-area nav ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .food-menu-area nav ul li {
+    padding: 2rem;
+  }
+
+  .healthy-food-menu img {
+    display: block;
+    width: 15.625rem;
+    height: 15.625rem;
+  }
+
+  .food-menu-items img {
+    display: block;
+    width: 12.5rem;
+    height: 12.5rem;
+  }
+
+  .food-name,
+  .food-price {
+    font-size: 1rem;
+    margin: 5rem 0 0 0;
+  }
+
+  .menus {
+    position: relative;
+    width: calc(100% - 1.25rem);
+    min-width: calc(100% - 1.25rem);
+    max-width: calc(100% - 1.25rem);
+    margin: 5rem auto;
+    padding: 6rem 0;
+    border-radius: 1rem;
+  }
+
+  .menus nav ul a {
+    margin: 0 1.5rem;
+  }
+
+  .menus-menu-name {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+  }
+
+  .about-us {
+    position: relative;
+    width: 50%;
+    margin: 7rem 0;
+    padding: 4rem;
+  }
+
+  .about-us h1 {
+    margin: 8rem 0 4rem 0;
+    font-size: 1.5rem;
+  }
+
+  .about-us p {
+    margin: 4rem 0 8rem 0;
+    font-size: 1rem;
+  }
+
+  #about-us figure {
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    z-index: -1;
+  }
+
+  #about-us figure img {
+    position: relative;
+  }
+
+  #contact {
+    margin: 4rem 0 0 0;
+  }
+
+  #contact h1 {
+    margin: 4rem 0 3rem 0;
+    font-size: 1.5rem;
+  }
+
+  .quick-links li {
+    margin: 2.5rem 0;
+    font-size: 1rem;
+  }
+
+  .contact-us h3 {
+    font-size: 1.25rem;
+  }
+
+  .contact-us li {
+    margin: 1rem 0;
+  }
+
+  .contact-us img {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .contact-us li address,
+  .contact-us li p {
+    margin: 1.5rem 0;
+    font-size: 1rem;
+  }
+
+  .follow-us img {
+    width: 3rem;
+    height: 3rem;
+    margin: 0 1rem 0 0;
+  }
+
+  .payment-options {
+    margin: 2rem 0;
+    font-size: 1rem;
+  }
+
+  .payment-options h4 {
+    margin: 0 0 1rem 0;
+  }
+
+  .payment-options img {
+    width: 3rem;
+    height: 3rem;
+    margin: 0 1rem 0 0;
+  }
+
+  .copyright p {
+    font-size: 1.125rem;
+  }
+
+  /* Dairy, Grains, Proteins, Vegetables, Fruits */
+
+  #dairy-products-section,
+  #grains-products-section,
+  #proteins-products-section,
+  #vegetables-products-section,
+  #fruits-products-section {
+    position: relative;
+  }
+
+  .dairy-products-border-area,
+  .grains-products-border-area,
+  .proteins-products-border-area,
+  .vegetables-products-border-area,
+  .fruits-products-border-area {
+    width: calc(100% - 20rem);
+    min-width: calc(100% - 20rem);
+    max-width: calc(100% - 20rem);
+  }
+
+  .dairy-products-area,
+  .grains-products-area,
+  .proteins-products-area,
+  .vegetables-products-area,
+  .fruits-products-area {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    padding: 5rem;
+  }
+
+  .dairy-products,
+  .grains-products,
+  .proteins-products,
+  .vegetables-products,
+  .fruits-products {
+    position: relative;
+  }
+
+  .dairy-products h1,
+  .grains-products h1,
+  .proteins-products h1,
+  .vegetables-products h1,
+  .fruits-products h1 {
+    font-size: 1.125rem;
+    margin: 2rem;
+  }
+
+  .dairy-products p,
+  .grains-products p,
+  .proteins-products p,
+  .vegetables-products p,
+  .fruits-products p {
+    font-size: .875rem;
+    margin: 2rem;
+  }
+
+  .vitamin-mineral-details-border {
+    position: relative;
+    margin: 5rem 0 7rem 0;
+  }
+
+  .vitamin-mineral-list-area {
+    width: calc(100% - 20rem);
+    min-width: calc(100% - 20rem);
+    max-width: calc(100% - 20rem);
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    padding: 5rem 3rem;
+    gap: 4rem
+  }
+
+  .vitamin-mineral-list {
+    position: relative;
+  }
+
+  #vitamin-mineral-list-title {
+    width: calc(100% - 20rem);
+    min-width: calc(100% - 20rem);
+    max-width: calc(100% - 20rem);
+    padding: 3rem 3rem .5rem 3rem;
+    font-size: 2.5rem;
+  }
+
+  .vitamin-mineral-list:nth-child(11),
+  .vitamin-mineral-list:nth-child(12) {
+    grid-row: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .vitamin-mineral-list:last-child {
+    grid-column: 1 / 3;
+  }
+
+  .vitamin-mineral-list h1,
+  .vitamin-mineral-list h3,
+  .vitamin-mineral-list p {
+    margin: 1.5rem 1rem;
+  }
+
+  .vitamin-mineral-list h1 {
+    font-size: 1.375rem;
+  }
+
+  .vitamin-mineral-list h3 {
+    font-size: 1rem;
+  }
+
+  .vitamin-mineral-list p {
+    font-size: 1rem;
+  }
+
+  /* FOODS */
+
+  .foods-area {
+    width: calc(100% - 10rem);
+    min-width: calc(100% - 10rem);
+    max-width: calc(100% - 10rem);
+  }
+
+  .foods-products-area {
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+    gap: 4rem;
+  }
+}

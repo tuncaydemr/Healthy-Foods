@@ -1,0 +1,644 @@
+@import "./media-queries/xl-media.css";
+@import "./media-queries/l-media.css";
+@import "./media-queries/m-media.css";
+@import "./media-queries/s-media.css";
+@import "./media-queries/xs-media.css";
+@import "./media-queries/xxs-media.css";
+@import "../anm/keyframes.css";
+
+:root {
+  --font-color-w: rgb(255, 255, 255);
+  --font-color-b: rgb(0, 0, 0);
+  --bg-color: rgb(236, 130, 176);
+  --bg-color-w: rgb(255, 255, 255);
+  --hover-font-color: rgb(0, 0, 0);
+  --hover-bg-color: rgb(255, 255, 255);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+html {
+  direction: ltr;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Alkatra', cursive;
+  font-family: 'Mochiy Pop One', sans-serif;
+  background-color: var(--bg-color-w);
+}
+
+header {
+  width: 100%;
+  display: flex;
+  background: var(--bg-color);
+  justify-content: space-between;
+}
+
+.logo-area {
+  width: 10%;
+  min-width: 10%;
+  max-width: 10%;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+
+.logo-area p {
+  width: 100%;
+  height: auto;
+  color: var(--font-color-w);
+  text-align: right;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+li {
+  list-style: none;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  object-fit: cover;
+}
+
+.side-menu-button {
+  width: 10%;
+  min-width: 10%;
+  max-width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  cursor: pointer;
+  z-index: 4;
+}
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  background: var(--bg-color);
+  z-index: 3;
+  overflow-x: hidden;
+}
+
+.side-menu ul {
+  display: block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.side-menu li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.side-menu li a {
+  display: block;
+  color: var(--font-color-w);
+  text-decoration: none;
+}
+
+.side-menu li a:hover {
+  color: var(--font-color-b);
+}
+
+nav[role="navigation"] {
+  width: 80%;
+  min-width: 80%;
+  max-width: 80%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.home,
+.contact,
+.foods,
+.dropdown-toggle {
+  cursor: pointer;
+  color: var(--font-color-w);
+}
+
+.home:hover,
+.home:hover a,
+.contact:hover,
+.contact:hover a,
+.foods:hover,
+.foods:hover a,
+.dropdown-toggle:hover {
+  background: var(--hover-bg-color);
+  color: var(--hover-font-color);
+}
+
+.dropdown-toggle:hover a {
+  background: var(--bg-color);
+  color: var(--font-color-w);
+}
+
+.dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: absolute;
+  z-index: 1;
+  background: var(--bg-color);
+  height: auto;
+}
+
+.dropdown-menu li a:hover {
+  background: var(--hover-bg-color);
+  color: var(--hover-font-color);
+}
+
+.dropdown-menu li,
+.dropdown-menu li a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.banner-img {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.banner-img img {
+  position: relative;
+  animation: left-to-right 1 1s ease-in-out;
+}
+
+.healthy-food {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.food-menu {
+  display: block;
+  height: auto;
+  background: var(--bg-color);
+}
+
+.food-menu h1,
+.food-menu h3 {
+  width: 100%;
+  height: auto;
+  font-weight: normal;
+  color: var(--font-color-w);
+}
+
+.healthy-food-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.food-menu-border {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.food-menu-area {
+  background: var(--bg-color-w);
+  height: auto;
+}
+
+.food-menu-area nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+
+.food-menu-area nav ul {
+  width: calc(100% - 1rem);
+  min-width: calc(100% - 1rem);
+  max-width: calc(100% - 1rem);
+  height: auto;
+}
+
+.food-menu-area nav ul li {
+  border-bottom: .0625rem solid var(--font-color-b);
+}
+
+.food-menu-area nav ul li:first-child,
+.food-menu-area nav ul li:nth-child(3) {
+  border-right: .0625rem solid var(--font-color-b);
+}
+
+.food-menu-area nav ul li:last-child,
+.food-menu-area nav ul li:nth-child(3) {
+  border-bottom: none;
+}
+
+.food-name {
+  float: left;
+}
+
+.food-price {
+  float: right;
+}
+
+.food-name,
+.food-price {
+  display: inline-block;
+}
+
+.food-menu-items {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+
+.menus {
+  height: auto;
+  background: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menus nav {
+  width: 100%;
+  height: auto;
+}
+
+.menus nav ul {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.menus nav ul a {
+  cursor: pointer;
+}
+
+.menus-area {
+  width: 100%;
+  height: auto;
+  background: var(--bg-color-w);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.menus-area img {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.menus-menu-name {
+  width: 100%;
+  height: auto;
+  color: var(--font-color-b);
+  text-align: center;
+}
+
+.about-us {
+  height: auto;
+  background: var(--bg-color);
+}
+
+.about-us h1 {
+  width: 100%;
+  height: auto;
+  color: var(--font-color-b);
+  font-weight: normal;
+}
+
+.about-us p {
+  width: 100%;
+  height: auto;
+  color: var(--font-color-b);
+  font-weight: normal;
+}
+
+#about-us {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+#about-us figure {
+  width: 100%;
+  height: auto;
+}
+
+#contact {
+  width: 100%;
+  height: auto;
+  background: var(--bg-color);
+  display: flex;
+  justify-content: space-around;
+  padding: 0 0 1rem 0;
+}
+
+.quick-links a:hover {
+  border-bottom: .125rem solid var(--hover-font-color);
+}
+
+.quick-links ul,
+.contact-us ul,
+.follow-us ul {
+  display: block;
+}
+
+.contact-us h3,
+.contact-us figure {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.contact-us h3 {
+  border-bottom: .125rem solid var(--font-color-b);
+}
+
+.follow-us li {
+  display: inline-block;
+}
+
+.payment-options {
+  width: 100%;
+  height: auto;
+}
+
+/* Dairy, Grains, Proteins, Vegetables, Fruits */
+
+#dairy-products-section,
+#grains-products-section,
+#proteins-products-section,
+#vegetables-products-section,
+#fruits-products-section {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dairy-products-border-area,
+.grains-products-border-area,
+.proteins-products-border-area,
+.vegetables-products-border-area,
+.fruits-products-border-area {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--bg-color);
+  border-radius: 1rem;
+}
+
+.dairy-products-area,
+.grains-products-area,
+.proteins-products-area,
+.vegetables-products-area,
+.fruits-products-area {
+  width: 100%;
+  height: auto;
+  background: var(--bg-color);
+  border-radius: 1rem;
+}
+
+.dairy-products,
+.grains-products,
+.proteins-products,
+.vegetables-products,
+.fruits-products {
+  width: 100%;
+  height: auto;
+  background: var(--bg-color-w);
+  border-radius: 1rem;
+}
+
+.dairy-products figure,
+.grains-products figure,
+.proteins-products figure,
+.vegetables-products figure,
+.fruits-products figure {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.dairy-products figure img,
+.grains-products figure img,
+.proteins-products figure img,
+.vegetables-products figure img,
+.fruits-products figure img {
+  display: block;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.vitamin-mineral-details-border {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.vitamin-mineral-list-area {
+  width: 100%;
+  height: auto;
+  display: grid;
+  background: var(--bg-color);
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+#vitamin-mineral-list-title {
+  font-weight: normal;
+  text-align: center;
+  background: var(--bg-color);
+  color: var(--font-color-w);
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  text-decoration: underline solid white 2rem;
+}
+
+.vitamin-mineral-list {
+  width: 100%;
+  height: auto;
+  background: var(--bg-color-w);
+  border-radius: 1rem;
+}
+
+.vitamin-mineral-list h1,
+.vitamin-mineral-list h3,
+.vitamin-mineral-list p {
+  text-align: center;
+}
+
+/* style for animations */
+
+.animate {
+  opacity: 0;
+}
+
+.animate.animate__animated {
+  opacity: 1;
+}
+
+.animation-transform-product {
+  animation: transform-product 1.5s ease-in-out;
+}
+
+.animation-transform {
+  animation: transform 1.5s ease-in-out;
+}
+
+.animation-translate {
+  animation: translate 1s ease-in-out;
+}
+
+/* FOODS */
+
+.foods-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem 0;
+}
+
+.foods-area {
+  height: auto;
+  background: var(--bg-color);
+  border-radius: 1rem;
+}
+
+.foods-area h1 {
+  font-weight: normal;
+  text-align: center;
+  margin: 2rem 0;
+  border-bottom: .125rem solid var(--font-color-w);
+  padding: 0 0 1rem 0;
+  color: white;
+}
+
+.foods-products-area {
+  width: 100%;
+  height: auto;
+  padding: 3rem;
+  display: grid;
+  background: var(--bg-color);
+  border-radius: 1rem;
+}
+
+.foods-products-area figure {
+  width: 100%;
+  height: auto;
+  background: var(--bg-color-w);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.foods-products-area img {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.foods-products-area figcaption {
+  font-size: 20px;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.piece-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 1rem 0;
+}
+
+.piece-area figure {
+  width: auto;
+  height: auto;
+  margin: 0 1rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.piece-area img {
+  width: 24px;
+  min-width: 24px;
+  max-width: 24px;
+  height: 24px;
+  min-height: 24px;
+  max-height: 24px;
+}
+
+.piece {
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+.shopping-cart {
+  border-radius: 1rem;
+  background: var(--bg-color);
+  color: white;
+  padding: 1rem 3rem;
+  font-size: 16px;
+  margin: 1rem 0;
+  border: none;
+  cursor: pointer;
+}
+
+.product-info {
+  display: flex;
+  justify-content: space-around;
+}
